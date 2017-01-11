@@ -2,7 +2,9 @@ package com.longjun.sorting.comparison;
 
 public class QuickSort {
     public int[] action(int[] nums) {
-
+        if (nums.length == 0) {
+            return nums;
+        }
         int start = 0;
         int end = nums.length - 1;
         sort(start, end, nums);
