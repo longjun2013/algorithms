@@ -5,9 +5,8 @@ public class QuickSort {
         if (nums.length == 0) {
             return nums;
         }
-        int start = 0;
-        int end = nums.length - 1;
-        sort(start, end, nums);
+        
+        sort(0, nums.length - 1, nums);
         return nums;
     }
 
