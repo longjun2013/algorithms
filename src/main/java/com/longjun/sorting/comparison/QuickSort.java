@@ -5,7 +5,7 @@ public class QuickSort {
         if (nums.length == 0) {
             return nums;
         }
-        
+
         sort(0, nums.length - 1, nums);
         return nums;
     }
