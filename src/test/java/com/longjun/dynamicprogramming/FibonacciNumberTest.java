@@ -19,4 +19,17 @@ public class FibonacciNumberTest {
         assertThat(fib.calculate(7), is(13));
     }
 
+    @Test
+    public void testCalculateWithDP() {
+        FibonacciNumber fib = new FibonacciNumber();
+
+        assertThat(fib.calculateWithDP(1), is(1));
+        assertThat(fib.calculateWithDP(2), is(1));
+        assertThat(fib.calculateWithDP(3), is(2));
+        assertThat(fib.calculateWithDP(4), is(3));
+        assertThat(fib.calculateWithDP(5), is(5));
+        assertThat(fib.calculateWithDP(6), is(8));
+        assertThat(fib.calculateWithDP(7), is(13));
+    }
+
 }
