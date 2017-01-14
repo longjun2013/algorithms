@@ -34,5 +34,10 @@ public class TopologicalSortTest {
         assertThat(ints, is(new int[]{4, 1, 6, 2, 0, 3, 5, 7}));
     }
 
+    @Test(expected = RuntimeException.class)
+    public void testDFSSolution3() {
+        List<GraphNode> nodes = graphGenerator.init(new int[]{1, 2}, new int[][]{{1, 2}, {2, 1}});
+        int[] ints = topologicalSort.dfsSolution(nodes);
 
+    }
 }
