@@ -1,9 +1,6 @@
 package com.longjun.graph;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class TopologicalSort {
     public int[] dfsSolution(List<GraphNode> nodes) {
@@ -23,6 +20,7 @@ public class TopologicalSort {
         if (nodeInPath(node, path)) {
             throw new RuntimeException("cycle found");
         }
+
         if (visitedNodes.containsKey(node.label)) {
             return;
         }
